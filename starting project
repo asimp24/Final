@@ -1,0 +1,70 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+
+
+int hand1[52]={0};
+int hand2[52]={0};
+int dicscard1[52]={0};
+int dicscard2[52]={0};
+
+//suit return
+string getSuitstring(int suitDec){
+    if (suitDec==0)
+        return "spades";
+    if (suitDec==1)
+        return "clubs";
+    if (suitDec==2)
+        return "hearts";
+    if (suitDec==3)
+        return "diamonds";
+}
+string getRankstring(int rankDec){
+    if (rankDec==1)
+        return "Ace";
+    if (rankDec==11)
+        return "Jack";
+    if (rankDec==12)
+        return "Queen";
+    if (rankDec==13)
+        return "King";
+}
+
+
+
+//deck randomizer
+void shuffle(int cardNum, *shuffledhand, *newHand){
+    for(int cN=0; cN<cardNum; cN++){
+        newHand[cN]=int shuffleEngine(*shuffled)
+        
+        shuffledhand[int rand()%cardNum]
+        
+    }
+}
+
+
+//MAIN FUNCITON
+
+int main(){
+    //deck maker
+int deck [4][13];
+
+while(int suit<4){
+    for(int rank=0;rank<13; rank++){
+        deck[suit][rank]= rank+1;
+        rank++;
+    }
+    suit++;
+}    
+//Starting randomization
+for(int pH=0; pH<26; pH++ ){
+    shuffle(26, *deck, *hand1)
+    
+    
+}
+    
+    
+    
+    return 0;
+}
